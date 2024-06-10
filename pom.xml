@@ -40,6 +40,13 @@
             <version>4.21.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -63,7 +70,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <argLine>
-                        -Dfile.encoding=${project.build.sourceEncoding}
+<!--                        -Dfile.encoding=${project.build.sourceEncoding}-->
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                 </configuration>
