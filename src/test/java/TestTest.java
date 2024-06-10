@@ -1,4 +1,5 @@
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class TestTest {
@@ -9,9 +10,10 @@ public class TestTest {
         Assert.assertTrue(true);
     }
 
-//    @Test
-//    public void testFail(){
-//
-//        Assert.assertTrue(false);
-//    }
+    @Ignore
+    @Test
+    public void testFail(){
+
+        Assert.assertTrue(false);
+    }
 }
