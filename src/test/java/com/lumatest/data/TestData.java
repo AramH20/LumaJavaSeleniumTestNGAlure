@@ -44,4 +44,7 @@ public class TestData {
         };
     }
 
+    public static final String DRIVEN_BACKPACK_PRODUCT_NAME= "Driven Backpack";
+    public static final String DRIVEN_BACKPACK_PRODUCT_PAGE_BREADCRUMBS_MENU_TEXT = "Home Gear Bags Driven Backpack";
+
 }
