@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 abstract class TopMenu extends BasePage{
     @FindBy(linkText = "Gear")
     private WebElement gearTopMenu;
-
     public TopMenu(WebDriver driver) {
         super(driver);
     }
