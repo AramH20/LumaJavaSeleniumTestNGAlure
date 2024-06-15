@@ -7,11 +7,12 @@ public class TestData {
     public static final String BASE_URL = "https://magento.softwaretestingboard.com";
     public static final String BASE_TITLE = "Home Page";
 
-    public static final By WHATS_NEW_MENU = By.xpath("//nav//span[text()=\"What's New\"]");
-    public static final String WHATS_NEW_URL = BASE_URL + "/what-is-new.html";
-    public static final String WHATS_NEW_TITLE = "What'" +
-            "s New";
-
+    public static class NavMenuData {
+        public static final By WHATS_NEW_MENU = By.xpath("//nav//span[text()=\"What's New\"]");
+        public static final String WHATS_NEW_URL = BASE_URL + "/what-is-new.html";
+        public static final String WHATS_NEW_TITLE = "What'" +
+                "s New";
+    }
     public static final By WOMEN_MENU = By.xpath("//nav//span[text()=\"Women\"]");
     public static final String WOMEN_URL = BASE_URL + "/women.html";
     public static final String WOMEN_TITLE = "Women";
@@ -35,7 +36,7 @@ public class TestData {
     @DataProvider(name = "navigationData")
     public static Object[][] getNavMenuData(){
         return new Object[][]{
-            {BASE_URL, WHATS_NEW_MENU, WHATS_NEW_URL, WHATS_NEW_TITLE},
+            {BASE_URL, NavMenuData.WHATS_NEW_MENU, NavMenuData.WHATS_NEW_URL, NavMenuData.WHATS_NEW_TITLE},
             {BASE_URL, WOMEN_MENU, WOMEN_URL, WOMEN_TITLE},
             {BASE_URL, MEN_MENU, MEN_URL, MEN_TITLE},
             {BASE_URL, GEAR_MENU, GEAR_URL, GEAR_TITLE},
