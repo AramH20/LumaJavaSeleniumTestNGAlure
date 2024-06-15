@@ -16,7 +16,7 @@ public class BaseTest {
     @BeforeSuite
     protected void setupWebDriverManager(){
         WebDriverManager.chromedriver().setup();
-        WebDriverManager.firefoxdriver().setup();
+//        WebDriverManager.firefoxdriver().setup();
 //        WebDriverManager.edgedriver().setup();
     }
 

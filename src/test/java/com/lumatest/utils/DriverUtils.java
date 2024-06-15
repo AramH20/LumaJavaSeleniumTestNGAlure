@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class DriverUtils {
     private static final ChromeOptions chromeOptions;
-    private static final FirefoxOptions firefoxOptions;
+//    private static final FirefoxOptions firefoxOptions;
 //    private static final EdgeOptions edgeOptions;
         static{
             chromeOptions = new ChromeOptions();
@@ -27,16 +27,16 @@ public class DriverUtils {
             chromeOptions.addArguments("--allow-running-insecure-content");
             chromeOptions.addArguments("--ignore-certificate-errors");
 
-            firefoxOptions = new FirefoxOptions();
-            firefoxOptions.addArguments("--incognito");
-            firefoxOptions.addArguments("--headless");
-            firefoxOptions.addArguments("--window-size=1920,1080");
-            firefoxOptions.addArguments("--disable-gpu");
-            firefoxOptions.addArguments("--no-sandbox");
-            firefoxOptions.addArguments("--disable-dev-shm-usage");
-            firefoxOptions.addArguments("--disable-web-security");
-            firefoxOptions.addArguments("--allow-running-insecure-content");
-            firefoxOptions.addArguments("--ignore-certificate-errors");
+//            firefoxOptions = new FirefoxOptions();
+//            firefoxOptions.addArguments("--incognito");
+//            firefoxOptions.addArguments("--headless");
+//            firefoxOptions.addArguments("--window-size=1920,1080");
+//            firefoxOptions.addArguments("--disable-gpu");
+//            firefoxOptions.addArguments("--no-sandbox");
+//            firefoxOptions.addArguments("--disable-dev-shm-usage");
+//            firefoxOptions.addArguments("--disable-web-security");
+//            firefoxOptions.addArguments("--allow-running-insecure-content");
+//            firefoxOptions.addArguments("--ignore-certificate-errors");
 
 //            edgeOptions = new EdgeOptions();
 //            edgeOptions.addArguments("--incognito");
@@ -61,13 +61,13 @@ public class DriverUtils {
         return chromeDriver;
     }
 
-    private static WebDriver createFirefoxDriver(WebDriver driver){
-        if(driver != null) {
-            driver.quit();
-        }
-
-        return new FirefoxDriver(firefoxOptions);
-    }
+//    private static WebDriver createFirefoxDriver(WebDriver driver){
+//        if(driver != null) {
+//            driver.quit();
+//        }
+//
+//        return new FirefoxDriver(firefoxOptions);
+//    }
 
 //    private static WebDriver createEdgeDriver(WebDriver driver){
 //        if(driver != null) {
@@ -82,9 +82,9 @@ public class DriverUtils {
                 case "chrome" -> {
                     return createChromeDriver(driver);
                 }
-                case "firefox" -> {
-                    return createFirefoxDriver(driver);
-                }
+//                case "firefox" -> {
+//                    return createFirefoxDriver(driver);
+//                }
 //                case "edge" -> {
 //                    return createEdgeDriver(driver);
 //                }
